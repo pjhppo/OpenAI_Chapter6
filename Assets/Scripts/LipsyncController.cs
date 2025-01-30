@@ -1,10 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LipsyncSimpleController : MonoBehaviour
-{
-    public AudioSource audioSource;
+{    
     public Animator anim;
-    //private LipsyncObject lipsyncObject;
+    private AudioSource audioSource;
     public float minActivationTime = 0.1f;
     public float maxActivationTime = 0.3f;
     private float nextActivationTime = 0f;
@@ -12,7 +12,11 @@ public class LipsyncSimpleController : MonoBehaviour
     private float currentAverageVolume = 0f;
     private float sensitivity = 10000f;
 
-    void Update()
+    private void Start(){
+        audioSource = gameObject.GetComponent<AudioSource>();
+    }
+
+   private  void Update()
     {
         AnalyzeSound();
 
@@ -28,7 +32,7 @@ public class LipsyncSimpleController : MonoBehaviour
     }
 
 
-    void AnalyzeSound()
+    private void AnalyzeSound()
     {
         audioSource.GetSpectrumData(audioClipSamples, 0, FFTWindow.BlackmanHarris);
         currentAverageVolume = 0f;

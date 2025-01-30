@@ -1,8 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(SkinnedMeshRenderer), typeof(AudioSource))]
-public class ARKitLipSync : MonoBehaviour
+[RequireComponent(typeof(AudioSource))]
+public class PhonemeMappingLipSync : MonoBehaviour
 {
     [System.Serializable]
     public class PhonemeMapping
@@ -11,23 +11,25 @@ public class ARKitLipSync : MonoBehaviour
         public string blendShapeName;
         public float frequencyThreshold;
         public float maxWeight = 100f;
-    }
+    }   
 
-    public PhonemeMapping[] phonemeConfigs;
+    [Header("Analyze Audio Settings")]
     public float fftResolution = 512;
     public float smoothingSpeed = 3f;
     public float volumeSensitivity = 50f;
     public float minVolume = 0.01f;
 
-    private SkinnedMeshRenderer faceMesh;
+    [Header("Animation Settings")]
+    public SkinnedMeshRenderer faceMesh;
+    public PhonemeMapping[] phonemeConfigs;
+
     private AudioSource audioSource;
     private Dictionary<string, int> blendShapeIndexMap = new Dictionary<string, int>();
     private float[] currentWeights;
     private float[] spectrumData;
 
-    void Start()
+    private void Start()
     {
-        faceMesh = GetComponent<SkinnedMeshRenderer>();
         audioSource = GetComponent<AudioSource>();
         audioSource.loop = true;
         audioSource.Play();
@@ -45,7 +47,7 @@ public class ARKitLipSync : MonoBehaviour
         currentWeights = new float[faceMesh.sharedMesh.blendShapeCount];
     }
 
-    void Update()
+    private void Update()
     {
         if (!audioSource.isPlaying || audioSource.clip == null)
         {
@@ -57,7 +59,7 @@ public class ARKitLipSync : MonoBehaviour
         UpdateBlendShapes();
     }
 
-    void AnalyzeAudio()
+    private void AnalyzeAudio()
     {
         audioSource.GetSpectrumData(spectrumData, 0, FFTWindow.BlackmanHarris);
         
@@ -94,7 +96,7 @@ public class ARKitLipSync : MonoBehaviour
         }
     }
 
-    void UpdateBlendShapes()
+    private void UpdateBlendShapes()
     {
         for(int i=0; i<currentWeights.Length; i++)
         {
@@ -102,7 +104,7 @@ public class ARKitLipSync : MonoBehaviour
         }
     }
 
-    float CalculateRMS(AudioSource source)
+    private float CalculateRMS(AudioSource source)
     {
         float[] samples = new float[1024];
         source.GetOutputData(samples, 0);
@@ -112,14 +114,14 @@ public class ARKitLipSync : MonoBehaviour
         return Mathf.Max(rms, 0.0001f);
     }
 
-    float GetFrequencyRangeValue(float targetFreq)
+    private float GetFrequencyRangeValue(float targetFreq)
     {
         int bin = Mathf.FloorToInt(targetFreq * fftResolution / AudioSettings.outputSampleRate);
         bin = Mathf.Clamp(bin, 0, spectrumData.Length-1);
         return spectrumData[bin] * 1000f;
     }
 
-    void ResetBlendShapeWeights()
+    private void ResetBlendShapeWeights()
     {
         for(int i=0; i<currentWeights.Length; i++)
         {
@@ -127,14 +129,14 @@ public class ARKitLipSync : MonoBehaviour
         }
     }
 
-    void ResetBlendShapes()
+    private void ResetBlendShapes()
     {
         ResetBlendShapeWeights();
         UpdateBlendShapes();
     }
 
     // 디버그용 스펙트럼 시각화
-    void OnDrawGizmos()
+    private void OnDrawGizmos()
     {
         if (spectrumData == null) return;
 
