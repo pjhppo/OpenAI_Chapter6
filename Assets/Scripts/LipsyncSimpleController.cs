@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class LipsyncSimpleController : MonoBehaviour
@@ -28,9 +27,7 @@ public class LipsyncSimpleController : MonoBehaviour
                 nextActivationTime = Time.time + Random.Range(minActivationTime, maxActivationTime);
             }
         }
-
     }
-
 
     private void AnalyzeSound()
     {
@@ -49,5 +46,4 @@ public class LipsyncSimpleController : MonoBehaviour
 
         anim.SetLayerWeight(anim.GetLayerIndex("Lipsync"), weight);
     }
-
 }
