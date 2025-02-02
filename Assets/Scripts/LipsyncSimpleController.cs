@@ -1,7 +1,8 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class LipsyncSimpleController : MonoBehaviour
-{    
+{
     public Animator anim;
     private AudioSource audioSource;
     public float minActivationTime = 0.1f;
@@ -11,11 +12,12 @@ public class LipsyncSimpleController : MonoBehaviour
     private float currentAverageVolume = 0f;
     private float sensitivity = 10000f;
 
-    private void Start(){
+    private void Start()
+    {
         audioSource = gameObject.GetComponent<AudioSource>();
     }
 
-   private  void Update()
+    private void Update()
     {
         AnalyzeSound();
 

@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Lipsync Avatar Mask
+  m_Mask: 00000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: clothes
+    m_Weight: 1
+  - m_Path: clothes/housefalls_outfit
+    m_Weight: 1
+  - m_Path: clothes/housefalls_outfit/hf_Cloth
+    m_Weight: 1
+  - m_Path: clothes/housefalls_outfit/hf_Pants
+    m_Weight: 1
+  - m_Path: clothes/housefalls_outfit/hf_Strap
+    m_Weight: 1
+  - m_Path: clothes/housefalls_outfit/hf_Buckle
+    m_Weight: 1
+  - m_Path: clothes/housefalls_outfit/hf_Buttons
+    m_Weight: 1
+  - m_Path: clothes/housefalls_outfit/hf_Sleeve
+    m_Weight: 1
+  - m_Path: clothes/bullettime_outfit
+    m_Weight: 1
+  - m_Path: clothes/bullettime_outfit/bt_Pocket
+    m_Weight: 1
+  - m_Path: clothes/bullettime_outfit/bt_Cloth
+    m_Weight: 1
+  - m_Path: clothes/bullettime_outfit/bt_Buckle
+    m_Weight: 1
+  - m_Path: clothes/bullettime_outfit/bt_Belt
+    m_Weight: 1
+  - m_Path: skin_joints
+    m_Weight: 1
+  - m_Path: skin_joints/hips
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/neck
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/neck/head
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/neck/head/l_eye
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/neck/head/r_eye
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_b_prox
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_b_prox/l_finger_b_inter
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_b_prox/l_finger_b_inter/l_finger_b_dist
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_c_prox
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_c_prox/l_finger_c_inter
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_c_prox/l_finger_c_inter/l_finger_c_dist
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_d_prox
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_d_prox/l_finger_d_inter
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_d_prox/l_finger_d_inter/l_finger_d_dist
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_a_prox
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_a_prox/l_finger_a_inter
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/l_arm/l_elbow/l_hand/l_finger_a_prox/l_finger_a_inter/l_finger_a_dist
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_b_prox
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_b_prox/r_finger_b_inter
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_b_prox/r_finger_b_inter/r_finger_b_dist
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_c_prox
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_c_prox/r_finger_c_inter
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_c_prox/r_finger_c_inter/r_finger_c_dist
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_d_prox
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_d_prox/r_finger_d_inter
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_d_prox/r_finger_d_inter/r_finger_d_dist
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_a_prox
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_a_prox/r_finger_a_inter
+    m_Weight: 1
+  - m_Path: skin_joints/hips/spine/chest/sternum/r_arm/r_elbow/r_hand/r_finger_a_prox/r_finger_a_inter/r_finger_a_dist
+    m_Weight: 1
+  - m_Path: skin_joints/hips/l_leg
+    m_Weight: 1
+  - m_Path: skin_joints/hips/l_leg/l_knee
+    m_Weight: 1
+  - m_Path: skin_joints/hips/l_leg/l_knee/l_foot
+    m_Weight: 1
+  - m_Path: skin_joints/hips/l_leg/l_knee/l_foot/l_toe
+    m_Weight: 1
+  - m_Path: skin_joints/hips/r_leg
+    m_Weight: 1
+  - m_Path: skin_joints/hips/r_leg/r_knee
+    m_Weight: 1
+  - m_Path: skin_joints/hips/r_leg/r_knee/r_foot
+    m_Weight: 1
+  - m_Path: skin_joints/hips/r_leg/r_knee/r_foot/r_toe
+    m_Weight: 1
+  - m_Path: body_parts
+    m_Weight: 1
+  - m_Path: body_parts/new_geo_feet
+    m_Weight: 1
+  - m_Path: body_parts/new_geo_body
+    m_Weight: 1
+  - m_Path: body_parts/Tails_geo
+    m_Weight: 1
+  - m_Path: body_parts/new_geo_arms_only
+    m_Weight: 1
+  - m_Path: full_body_geo
+    m_Weight: 1
+  - m_Path: common_geo
+    m_Weight: 1
+  - m_Path: common_geo/LowerTeeth_geo
+    m_Weight: 1
+  - m_Path: common_geo/R_Eye_geo
+    m_Weight: 1
+  - m_Path: common_geo/UpperTeeth_geo
+    m_Weight: 1
+  - m_Path: common_geo/panda_geo_face
+    m_Weight: 1
+  - m_Path: common_geo/Tongue_geo
+    m_Weight: 1
+  - m_Path: common_geo/L_Eye_geo
+    m_Weight: 1
