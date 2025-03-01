@@ -47,7 +47,7 @@ public class PhonemeMappingLipSync : MonoBehaviour
         currentWeights = new float[faceMesh.sharedMesh.blendShapeCount];
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (!audioSource.isPlaying || audioSource.clip == null)
         {
