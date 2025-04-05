@@ -227,7 +227,6 @@ GameObject:
   m_Component:
   - component: {fileID: 71665361}
   - component: {fileID: 71665363}
-  - component: {fileID: 71665362}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -250,21 +249,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &71665362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71665358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 767ad48bf0e794e2bacc4424ed4e693e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 1181594614}
-  minActivationTime: 0.1
-  maxActivationTime: 0.3
 --- !u!82 &71665363
 AudioSource:
   m_ObjectHideFlags: 0
@@ -551,11 +535,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1181594614 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 920447951199956806, guid: 2729e088c8de34921845b7a441b62b21, type: 3}
-  m_PrefabInstance: {fileID: 59160032}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

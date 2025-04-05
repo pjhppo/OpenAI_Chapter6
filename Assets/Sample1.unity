@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 71665361}
   - component: {fileID: 71665363}
-  - component: {fileID: 71665364}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -249,44 +248,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &71665364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71665358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7e0e9213f0d142689ddcc7e2dc683c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fftResolution: 256
-  smoothingSpeed: 20
-  volumeSensitivity: 5
-  minVolume: 0
-  faceMesh: {fileID: 1572497227}
-  phonemeConfigs:
-  - phoneme: A
-    blendShapeName: blendShape1.MTH_A
-    frequencyThreshold: 500
-    maxWeight: 50
-  - phoneme: I
-    blendShapeName: blendShape1.MTH_I
-    frequencyThreshold: 2400
-    maxWeight: 40
-  - phoneme: U
-    blendShapeName: blendShape1.MTH_U
-    frequencyThreshold: 400
-    maxWeight: 30
-  - phoneme: E
-    blendShapeName: blendShape1.MTH_E
-    frequencyThreshold: 1200
-    maxWeight: 50
-  - phoneme: O
-    blendShapeName: blendShape1.MTH_O
-    frequencyThreshold: 600
-    maxWeight: 20
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,11 +437,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!137 &1572497227 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 9147472307659843515, guid: 0da56d7ebfa3547cca92e93e18e35bbe, type: 3}
-  m_PrefabInstance: {fileID: 5053804779970027030}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5053804779970027030
 PrefabInstance:
   m_ObjectHideFlags: 0
